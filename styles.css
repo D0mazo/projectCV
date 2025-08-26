@@ -1,0 +1,31 @@
+/* styles.css - Custom CSS to complement Tailwind */
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+a {
+    transition: color 0.3s ease;
+}
+
+section {
+    scroll-margin-top: 80px; /* For smooth scrolling with sticky nav */
+}
+
+.grid ul {
+    margin-top: 0.5rem;
+}
+
+/* Animations for sections */
+section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
