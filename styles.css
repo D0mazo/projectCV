@@ -29,3 +29,30 @@ section.visible {
     opacity: 1;
     transform: translateY(0);
 }
+
+/* Mobile-specific adjustments */
+@media (max-width: 640px) {
+    .max-w-4xl {
+        max-width: 100%;
+        padding: 1rem;
+    }
+    nav ul {
+        padding: 0.5rem;
+    }
+    .space-y-6 > div h3 {
+        font-size: 1.25rem;
+    }
+    .space-y-6 > div ul {
+        margin-left: 1rem;
+    }
+    .grid {
+        grid-template-columns: 1fr !important;
+    }
+    .grid > div {
+        margin-bottom: 1rem;
+    }
+    footer {
+        font-size: 0.875rem;
+        padding: 1rem;
+    }
+}
