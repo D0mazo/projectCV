@@ -6,54 +6,20 @@ body {
 strong {
     font-weight: bold !important;
 }
-
 a {
     transition: color 0.3s ease;
 }
-
 section {
     scroll-margin-top: 80px;
 }
 
-.grid ul {
-    margin-top: 0.5rem;
-}
-
-
-section {
+/* Fade-in animation */
+.fade-section {
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.5s ease, transform 0.5s ease;
 }
-
-section.visible {
+.fade-section.visible {
     opacity: 1;
     transform: translateY(0);
-}
-
-
-@media (max-width: 640px) {
-    .max-w-4xl {
-        max-width: 100%;
-        padding: 1rem;
-    }
-    nav ul {
-        padding: 0.5rem;
-    }
-    .space-y-6 > div h3 {
-        font-size: 1.25rem;
-    }
-    .space-y-6 > div ul {
-        margin-left: 1rem;
-    }
-    .grid {
-        grid-template-columns: 1fr !important;
-    }
-    .grid > div {
-        margin-bottom: 1rem;
-    }
-    footer {
-        font-size: 0.875rem;
-        padding: 1rem;
-    }
 }
