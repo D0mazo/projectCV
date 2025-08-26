@@ -4,34 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dominykas Simanavičius - CV</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
-    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-100 font-sans antialiased">
+
+    <!-- Header -->
     <header class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-12 text-center shadow-lg">
         <h1 class="text-4xl font-bold sm:text-3xl">Dominykas Simanavičius</h1>
         <p class="text-xl mt-2 sm:text-lg">Analitikas-Programuotojas</p>
     </header>
 
+    <!-- Navigation -->
     <nav class="sticky top-0 bg-white shadow-md z-10">
-  <ul class="flex justify-center space-x-6 py-4">
-    <li><a href="#kontaktai" class="text-blue-600 hover:text-blue-800 font-semibold">Kontaktai</a></li>
-    <li><a href="#patirtis" class="text-blue-600 hover:text-blue-800 font-semibold">Patirtis</a></li>
-    <li><a href="#issilavinimas" class="text-blue-600 hover:text-blue-800 font-semibold">Išsilavinimas</a></li>
-    <li><a href="#sertifikatai" class="text-blue-600 hover:text-blue-800 font-semibold">Sertifikatai</a></li>
-    <li><a href="#igudziai" class="text-blue-600 hover:text-blue-800 font-semibold">Įgūdžiai</a></li>
-  </ul>
-</nav>
+        <ul class="flex flex-wrap justify-center space-x-4 sm:space-x-2 py-4">
+            <li><a href="#kontaktai" class="text-blue-600 hover:text-blue-800 font-semibold">Kontaktai</a></li>
+            <li><a href="#patirtis" class="text-blue-600 hover:text-blue-800 font-semibold">Patirtis</a></li>
+            <li><a href="#issilavinimas" class="text-blue-600 hover:text-blue-800 font-semibold">Išsilavinimas</a></li>
+            <li><a href="#sertifikatai" class="text-blue-600 hover:text-blue-800 font-semibold">Sertifikatai</a></li>
+            <li><a href="#igudziai" class="text-blue-600 hover:text-blue-800 font-semibold">Įgūdžiai</a></li>
+        </ul>
+    </nav>
 
-    <main class="max-w-4xl mx-auto p-6">
-        <section id="kontaktai" class="mb-8">
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto p-6 sm:p-4">
+
+        <!-- Kontaktai -->
+        <section id="kontaktai" class="mb-8 fade-section">
             <h2 class="text-2xl font-bold mb-4 border-b-2 border-blue-600 pb-2 sm:text-xl">Kontaktai</h2>
             <p>Telefonas: +370 687 847 81</p>
             <p>El. Paštas: <a href="mailto:Dominykas.simanavicius@proton.me" class="text-blue-600 hover:underline">Dominykas.simanavicius@proton.me</a></p>
-            <p>LinkedIn profilis: <a href="https://www.linkedin.com/in/dominykas-simanavi%C4%8Dius-3a406a276" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer"> www.linkedin.com/in/dominykas-simanavičius-3a406a276</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/dominykas-simanavi%C4%8Dius-3a406a276" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">www.linkedin.com/in/dominykas-simanavičius-3a406a276</a></p>
         </section>
-        <section id="patirtis" class="mb-8">
+
+        <!-- Patirtis -->
+        <section id="patirtis" class="mb-8 fade-section">
             <h2 class="text-2xl font-bold mb-4 border-b-2 border-blue-600 pb-2 sm:text-xl">Patirtis</h2>
             <div class="space-y-6">
                 <div>
@@ -41,12 +49,12 @@
                         <li>Kasdienių ataskaitų rengimui, duomenų tvarkymui ir analizei naudojama „Excel“, SQL ir „Qlik“.</li>
                         <li>SAP palaikymas – SAP sistemų naudotojų konsultavimas ir techninis palaikymas.</li>
                         <li>WMS administratorius – Sandėlio valdymo sistemos priežiūra.</li>
-                        <li><strong>Programuotojo patirtis:</strong> bendradarbiavimas palaikant ir vystant WEB aplikacijos vartotojo dalį (Vue.js, Tailwind.css, SourceTree, JIRA).</li>
+                        <li><strong>Programuotojo patirtis:</strong> bendradarbiavimas palaikant ir vystant WEB aplikacijos vartotojo dalį (Vue.js, Tailwind CSS, SourceTree, JIRA).</li>
                     </ul>
                 </div>
                 <div>
                     <h3 class="text-xl font-semibold sm:text-lg">Programuotojas | 2024.02 - 2024.08</h3>
-                    <p class="text-gray-600">Kaunas Software technology Group</p>
+                    <p class="text-gray-600">Kaunas Software Technology Group</p>
                     <ul class="list-disc ml-6 mt-2 sm:ml-4">
                         <li>Vartotojo dalies kūrimas naudojant JavaScript, HTML ir CSS, su „front-end“ karkasais, tokiais kaip Vue.js.</li>
                         <li>Dalinis susipažinimas ir naudojimas C# programavimo kalbos: sukurtos ir prižiūrėtos žiniatinklio aplikacijos naudojant Blazor. Serverio dalies .NET kūrimas.</li>
@@ -56,20 +64,22 @@
             </div>
         </section>
 
-        <section id="issilavinimas" class="mb-8">
+        <!-- Išsilavinimas -->
+        <section id="issilavinimas" class="mb-8 fade-section">
             <h2 class="text-2xl font-bold mb-4 border-b-2 border-blue-600 pb-2 sm:text-xl">Išsilavinimas</h2>
             <ul class="list-disc ml-6 sm:ml-4">
                 <li>Vilniaus kolegija | 2024 – Bakalauro studijos, Programų sistemos</li>
-                <li>Baltic Institute of Technology | 2023–2024 Sertifikuota, įgytas profesinis pažymėjimas, „Front-End“ programavimo studijų programa</li>
+                <li>Baltic Institute of Technology | 2023–2024 Sertifikuota, „Front-End“ programavimo studijų programa</li>
                 <li>Fribūro universitetas, Šveicarija | 2020–2022 Teologijos magistras</li>
                 <li>Fribūro universitetas, Šveicarija | 2017–2020 Teologijos bakalauras</li>
                 <li>Liono universitetas, Prancūzija | 2016–2017, Renno universitetas, Prancūzija | 2015 Prancūzų kalbos studijos</li>
             </ul>
         </section>
 
-        <section id="sertifikatai" class="mb-8">
+        <!-- Sertifikatai -->
+        <section id="sertifikatai" class="mb-8 fade-section">
             <h2 class="text-2xl font-bold mb-4 border-b-2 border-blue-600 pb-2 sm:text-xl">Sertifikatai</h2>
-            <ul class="list-disc ml-6 sm:ml-4">
+            <ul class="list-disc ml-6 sm:ml-4 space-y-1">
                 <li>Front End Development Libraries – freeCodeCamp (2025 m. rugpjūtis)</li>
                 <li>Quality Assurance – freeCodeCamp (2025 m. rugpjūtis)</li>
                 <li>Python GEN-AI – Baltic Institute of Technology (2025 m. kovas)</li>
@@ -88,40 +98,41 @@
             </ul>
         </section>
 
-        <section id="igudziai" class="mb-8">
+        <!-- Įgūdžiai -->
+        <section id="igudziai" class="mb-8 fade-section">
             <h2 class="text-2xl font-bold mb-4 border-b-2 border-blue-600 pb-2 sm:text-xl">Įgūdžiai</h2>
-            <p>Detalesnis techninių įgūdžių aprašymas, kad pabrėžčiau kompetencijas programavimo, duomenų analizės ir susijusiose srityse. Tai apima tiek front-end, tiek back-end technologijas, duomenų vizualizaciją ir sistemų administravimą.</p>
-            <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-                <div class="bg-white p-4 rounded shadow sm:p-2">
-                    <h3 class="font-semibold sm:text-base">Front-End Programavimas</h3>
-                    <ul class="list-disc ml-4 sm:ml-2">
-                        <li>Vue.js ir React.js karkasai</li>
-                        <li>Tailwind CSS stilizavimui</li>
+            <p>Techninių įgūdžių aprašymas programavimo, duomenų analizės ir susijusiose srityse. Apima front-end, back-end, duomenų vizualizaciją ir sistemų administravimą.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 mt-4">
+                <div class="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition">
+                    <h3 class="font-semibold text-lg">Front-End Programavimas</h3>
+                    <ul class="list-disc ml-4 mt-2">
+                        <li>Vue.js ir React.js</li>
+                        <li>Tailwind CSS</li>
                         <li>JavaScript, HTML, CSS</li>
                         <li>Responsive dizainas</li>
                     </ul>
                 </div>
-                <div class="bg-white p-4 rounded shadow sm:p-2">
-                    <h3 class="font-semibold sm:text-base">Back-End ir Programavimas</h3>
-                    <ul class="list-disc ml-4 sm:ml-2">
+                <div class="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition">
+                    <h3 class="font-semibold text-lg">Back-End Programavimas</h3>
+                    <ul class="list-disc ml-4 mt-2">
                         <li>C# ir .NET Core</li>
                         <li>Blazor web aplikacijos</li>
-                        <li>SQL ir MySQL duomenų bazės</li>
-                        <li>Python (įskaitant GEN-AI)</li>
+                        <li>SQL ir MySQL</li>
+                        <li>Python (GEN-AI)</li>
                     </ul>
                 </div>
-                <div class="bg-white p-4 rounded shadow sm:p-2">
-                    <h3 class="font-semibold sm:text-base">Duomenų Analizė</h3>
-                    <ul class="list-disc ml-4 sm:ml-2">
+                <div class="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition">
+                    <h3 class="font-semibold text-lg">Duomenų Analizė</h3>
+                    <ul class="list-disc ml-4 mt-2">
                         <li>Power BI vizualizacijos</li>
                         <li>DAX kalba</li>
                         <li>Excel, Qlik ataskaitos</li>
                         <li>Data Science pagrindai</li>
                     </ul>
                 </div>
-                <div class="bg-white p-4 rounded shadow sm:p-2">
-                    <h3 class="font-semibold sm:text-base">Sistemos ir Įrankiai</h3>
-                    <ul class="list-disc ml-4 sm:ml-2">
+                <div class="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition">
+                    <h3 class="font-semibold text-lg">Sistemos ir Įrankiai</h3>
+                    <ul class="list-disc ml-4 mt-2">
                         <li>SAP palaikymas</li>
                         <li>WMS administravimas</li>
                         <li>JIRA, SourceTree</li>
@@ -132,8 +143,10 @@
         </section>
     </main>
 
+    <!-- Footer -->
     <footer class="bg-gray-800 text-white py-4 text-center">
         <p>&copy; 2025 Dominykas Simanavičius. Sukurta naudojant HTML, CSS, JavaScript ir Tailwind CSS.</p>
     </footer>
+
 </body>
 </html>
